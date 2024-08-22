@@ -634,6 +634,7 @@ header {
 	bottom: 40px;
 	visibility: visible;
 	opacity: 1;
+}
 
 
 @media (width < 900px) {
