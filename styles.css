@@ -80,7 +80,7 @@ header {
 }
 
 .nav__logo {
-  width: 15rem;
+  width: 200px;
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--white);
