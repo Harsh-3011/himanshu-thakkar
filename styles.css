@@ -236,7 +236,7 @@ header {
   perspective: 180px;
 }
 
-.slideimg{
+.slide img{
   width: 400px;
   transition: transform 1s;
 }
@@ -268,7 +268,7 @@ header {
 
 /* video---- */
 video{
-  width: 100%;
+  width: 98%;
   height: 50%;
   display: flex;
 }
@@ -633,6 +633,7 @@ video{
 
 .testimonial__container{
   display: flex;
+  justify-content: space-around;
   width: 100%;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
