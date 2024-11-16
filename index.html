@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets2/New folder/favicon.jpg">
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
       rel="stylesheet"
@@ -497,6 +498,76 @@
   </div>
 </section>
 
+<!-- new testimonial -->
+<section class="section__container doctors__container s" id="testimonial">
+  <div class="testimonial-carousel">
+    <div class="testimonials">
+      <!-- Duplicating testimonials for infinite loop -->
+      <div class="testimonial_new">
+        <img src="assets2/New folder/Sneha_devgaria.jpg" alt="John Doe" class="photo">
+        <p class="quote">"Khanafy's service is exceptional. The food arrives hot and fresh every time!"</p>
+        <p class="author">- John Doe</p>
+        <a href="https://www.youtube.com/watch?v=-Kgwpj3uRZ0&list=PLLJUGyZ08x9AS4YMn-6r0zfWeidpZOKBO&index=13"><i class="fa-brands fa-youtube"></i><p>Watch Full Video On Youtube</p></a>
+      </div>
+      <div class="testimonial_new">
+        <img src="assets2/New folder/Sneha_devgaria.jpg" alt="Jane Smith" class="photo">
+        <p class="quote">"The best food delivery app! Quick and reliable."</p>
+        <p class="author">- Jane Smith</p>
+        <a href="https://www.youtube.com/watch?v=-Kgwpj3uRZ0&list=PLLJUGyZ08x9AS4YMn-6r0zfWeidpZOKBO&index=13"><i class="fa-brands fa-youtube"></i><p>Watch Full Video On Youtube</p></a>
+      </div>
+      <div class="testimonial_new">
+        <img src="assets2/New folder/Sneha_devgaria.jpg" alt="Sarah Brown" class="photo">
+        <p class="quote">"Love the variety and the quality. Khanafy never disappoints!"</p>
+        <p class="author">- Sarah Brown</p>
+        <a href="https://www.youtube.com/watch?v=-Kgwpj3uRZ0&list=PLLJUGyZ08x9AS4YMn-6r0zfWeidpZOKBO&index=13"><i class="fa-brands fa-youtube"></i><p>Watch Full Video On Youtube</p></a>
+      </div>
+      <div class="testimonial_new">
+        <img src="assets2/New folder/Sneha_devgaria.jpg" alt="Mike Johnson" class="photo">
+        <p class="quote">"I recommend Khanafy to all my friends. Great experience!"</p>
+        <p class="author">- Mike Johnson</p>
+        <a href="https://www.youtube.com/watch?v=-Kgwpj3uRZ0&list=PLLJUGyZ08x9AS4YMn-6r0zfWeidpZOKBO&index=13"><i class="fa-brands fa-youtube"></i><p>Watch Full Video On Youtube</p></a>
+      </div>
+      <div class="testimonial_new">
+        <img src="assets2/New folder/Sneha_devgaria.jpg" alt="Emily Davis" class="photo">
+        <p class="quote">"Fast, fresh, and delicious! What more could you ask for?"</p>
+        <p class="author">- Emily Davis</p>
+        <a href="https://www.youtube.com/watch?v=-Kgwpj3uRZ0&list=PLLJUGyZ08x9AS4YMn-6r0zfWeidpZOKBO&index=13"><i class="fa-brands fa-youtube"></i><p>Watch Full Video On Youtube</p></a>
+      </div>
+      <div class="testimonial_new">
+        <img src="assets2/New folder/Sneha_devgaria.jpg" alt="Chris Wilson" class="photo">
+        <p class="quote">"The delivery timing is always spot-on. Love it!"</p>
+        <p class="author">- Chris Wilson</p>
+        <a href="https://www.youtube.com/watch?v=-Kgwpj3uRZ0&list=PLLJUGyZ08x9AS4YMn-6r0zfWeidpZOKBO&index=13"><i class="fa-brands fa-youtube"></i><p>Watch Full Video On Youtube</p></a>
+      </div>
+      <!-- Repeat testimonials for seamless scrolling -->
+      <div class="testimonial_new">
+        <img src="assets2/New folder/Sneha_devgaria.jpg" alt="John Doe" class="photo">
+        <p class="quote">"Khanafy's service is exceptional. The food arrives hot and fresh every time!"</p>
+        <p class="author">- John Doe</p>
+        <a href="https://www.youtube.com/watch?v=-Kgwpj3uRZ0&list=PLLJUGyZ08x9AS4YMn-6r0zfWeidpZOKBO&index=13"><i class="fa-brands fa-youtube"></i><p>Watch Full Video On Youtube</p></a>
+      </div>
+      <div class="testimonial_new">
+        <img src="assets2/New folder/Sneha_devgaria.jpg" alt="Jane Smith" class="photo">
+        <p class="quote">"The best food delivery app! Quick and reliable."</p>
+        <p class="author">- Jane Smith</p>
+        <a href="https://www.youtube.com/watch?v=-Kgwpj3uRZ0&list=PLLJUGyZ08x9AS4YMn-6r0zfWeidpZOKBO&index=13"><i class="fa-brands fa-youtube"></i><p>Watch Full Video On Youtube</p></a>
+      </div>
+      <div class="testimonial_new">
+        <img src="assets2/New folder/Sneha_devgaria.jpg" alt="Sarah Brown" class="photo">
+        <p class="quote">"Love the variety and the quality. Khanafy never disappoints!"</p>
+        <p class="author">- Sarah Brown</p>
+        <a href="https://www.youtube.com/watch?v=-Kgwpj3uRZ0&list=PLLJUGyZ08x9AS4YMn-6r0zfWeidpZOKBO&index=13"><i class="fa-brands fa-youtube"></i><p>Watch Full Video On Youtube</p></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
 <!-- ---footer-------- -->
 
 
@@ -569,7 +640,30 @@
           }
         });
       }
+
+      const testimonials = document.querySelector('.testimonials');
+    const testimonialWidth = document.querySelector('.testimonial_new').offsetWidth + 20; // Includes gap size
+    let currentIndex = 0;
+
+    function autoplayCarousel() {
+      currentIndex++;
+      testimonials.style.transition = 'transform 0.5s ease-in-out';
+      testimonials.style.transform = `translateX(-${testimonialWidth * currentIndex}px)`;
+
+      // Reset to start when the last set of testimonials slides out
+      if (currentIndex >= testimonials.children.length / 2) {
+        setTimeout(() => {
+          testimonials.style.transition = 'none'; // Remove animation
+          testimonials.style.transform = 'translateX(0)';
+          currentIndex = 0;
+        }, 500); // Match transition duration
+      }
+    }
+
+    setInterval(autoplayCarousel, 6000); // Change every 4 seconds
     </script>
+
+  
 
     <!-- <button class="to-top"><i class="fas fa-angle-up"></i></button> -->
     <!-- <a href="#" class="cd-top text-replace js-cd-top">Top</a> -->
