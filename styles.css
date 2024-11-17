@@ -578,7 +578,7 @@ video{
 
 /* accordian- */
 .wrapper {
-  max-width: 75%;
+  max-width: 85%;
   margin: auto;
 }
 
@@ -598,8 +598,8 @@ video{
   color: var(--text-light);
 }
 
-.wrapper > h1 {
-  letter-spacing: 3px;
+.wrapper p{
+  color: var(--text-light);
 }
 
 .accordion {
@@ -617,6 +617,11 @@ video{
   align-items: center;
   font-weight: bold;
 }
+
+.wrapper h2{
+  text-align: center;
+}
+
 
 .accordion i {
   font-size: 1.6rem;
@@ -722,7 +727,7 @@ video{
   overflow: hidden;
   width: 100%;
   margin-top: 20px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .testimonials {
