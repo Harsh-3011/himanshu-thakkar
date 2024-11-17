@@ -603,7 +603,7 @@ video{
 }
 
 .accordion {
-  background-color: white;
+  background-color: rgb(109, 85, 85);
   color: var(--primary-color);
   cursor: pointer;
   font-size: 1.2rem;
@@ -761,6 +761,10 @@ video{
   font-size: 2rem;
   padding-right: 15px;
 }
+.testimonial_new p{
+  color: var(--text-light);
+}
+
 .testimonial_new a p{
   color: var(--text-dark);
 }
