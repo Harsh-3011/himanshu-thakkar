@@ -1,3 +1,8 @@
+.testimonials{
+	margin: 0 auto !important;
+	overflow: hidden;
+}
+
 .shadow-effect {
 		    background: #fff;
 		    padding: 20px;
@@ -17,7 +22,7 @@
 		    margin: -17px auto 0;
 		    display: table;
 		    width: auto;
-		    background:#3190E7;
+		    background:#105960;
 		    padding: 9px 35px;
 		    border-radius: 12px;
 		    text-align: center;
@@ -43,7 +48,7 @@
 		}
 		#customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
 #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
-		    background: #3190E7;
+		    background: #105960
 		    transform: translate3d(0px, -50%, 0px) scale(0.7);
 		}
 #customers-testimonials.owl-carousel .owl-dots{
@@ -55,7 +60,7 @@
 	display: inline-block;
 }
 		#customers-testimonials.owl-carousel .owl-dots .owl-dot span {
-		    background: #3190E7;
+		    background: #105960;
 		    display: inline-block;
 		    height: 20px;
 		    margin: 0 2px 5px;
@@ -63,4 +68,28 @@
 		    transform-origin: 50% 50% 0;
 		    transition: all 250ms ease-out 0s;
 		    width: 20px;
+		}
+
+		.owl-dot{
+			display: none !important;
+		}
+
+		.shadow-effect a{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 20px;
+			margin-top: 20px;
+			color: #105960;
+			text-decoration: none;
+		}
+		.shadow-effect p{
+			align-items: center;
+			margin-bottom: 0 !important;
+		}
+		
+		.shadow-effect i{
+			font-size: 2rem;
+			padding-right: 10px;
+			color: #FF0033;
 		}

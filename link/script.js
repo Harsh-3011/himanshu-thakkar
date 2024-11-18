@@ -8,7 +8,7 @@ jQuery(document).ready(function($) {
 		            margin: 0,
 		            autoplay: true,
 		            dots:true,
-		            autoplayTimeout: 8500,
+		            autoplayTimeout: 4000,
 		            smartSpeed: 450,
 		            responsive: {
 		              0: {
