@@ -882,8 +882,13 @@ swiper-slide img {
     box-sizing: border-box;
   }
 
+  .doctors__nav{
+    justify-content: center;
+  }
 
-
+  .header__container h1{
+    font-size: 2.8rem;
+  }
 
   .why__container {
     grid-template-columns: repeat(1, 1fr);
